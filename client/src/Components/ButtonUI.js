@@ -28,6 +28,18 @@ const useStyles = makeStyles({
     justifyContent: "center",
     margin: "10px",
   },
+  items2: {
+    backgroundColor: "orange",
+    color: "white",
+    borderRadius: "10px",
+    width: "400px",
+    height: "250px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    margin: "10px",
+    cursor: "pointer"
+  },
   paperdesign: {
     height: "350px",
     padding: "20px",
@@ -80,7 +92,7 @@ const ButtonUI = () => {
           <Box className={classes.items}>
             <p>New Box is here</p>
           </Box>
-          <Box className={classes.items}>
+          <Box className={classes.items2}>
             <p>New Box is here</p>
           </Box>
         </Paper>
