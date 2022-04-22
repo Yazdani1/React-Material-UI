@@ -6,7 +6,7 @@ import "./buttonui.css";
 import { Paper } from "@mui/material";
 import { Box } from "@mui/material";
 import { Typography } from "@mui/material";
-import { height, padding } from "@mui/system";
+import { height, margin, padding } from "@mui/system";
 import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles({
@@ -17,10 +17,21 @@ const useStyles = makeStyles({
     textAlign: "center",
     color: "white",
   },
-  btn: {
-    backgroundColor: "red",
+  items: {
+    backgroundColor: "black",
     color: "white",
-    borderRadius: "60px",
+    borderRadius: "10px",
+    width: "400px",
+    height: "250px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    margin: "10px",
+  },
+  paperdesign: {
+    height: "350px",
+    padding: "20px",
+    display: "flex",
   },
 });
 
@@ -64,8 +75,14 @@ const ButtonUI = () => {
             Outlined
           </Button>
         </Stack>
-        <Paper spacing={2} sx={{ height: "350px", padding: "20px" }}>
+        <Paper direction="row" spacing={2} className={classes.paperdesign}>
           <Typography className={classes.title}>New Post</Typography>
+          <Box className={classes.items}>
+            <p>New Box is here</p>
+          </Box>
+          <Box className={classes.items}>
+            <p>New Box is here</p>
+          </Box>
         </Paper>
       </div>
     </React.Fragment>
